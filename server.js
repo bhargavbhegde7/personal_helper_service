@@ -1,6 +1,10 @@
 var path = require('path');
 var express = require('express');
 var app = express();
+const cors = require('cors');
+app.use(cors({ "https://bhargavhegde.com/utils.html": true,
+		"http://192.168.0.21:8081/utils.html": true}));
+
 
 app.get('/', function(req, res){
 	console.log("request incoming . . .");
