@@ -1,3 +1,4 @@
 ps -ef | grep ngrok
 nohup ./ngrok http 3500 &
 python get_....py
+sudo crontab -e
