@@ -8,7 +8,8 @@ app.use(cors({ "https://bhargavhegde.com/utils.html": true,
 
 app.get('/', function(req, res){
 	console.log("request incoming . . .");
-	res.sendFile(path.join(__dirname, '.', './index.html'));
+	//res.sendFile(path.join(__dirname, '.', './index.html'));
+	res.send('That escalated quickly!');
 });
 
 app.post('/',function(req, res){
