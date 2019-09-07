@@ -2,8 +2,7 @@ var path = require('path');
 var express = require('express');
 var app = express();
 const cors = require('cors');
-app.use(cors({ "https://bhargavhegde.com/utils.html": true,
-		"http://192.168.0.21:8081/utils.html": true}));
+app.use(cors({ "https://bhargavhegde.com/utils.html": true}));
 
 
 app.get('/', function(req, res){
@@ -17,7 +16,7 @@ app.post('/',function(req, res){
 	res.send('have some patience. haven\'t written the post handler yet');
 });
 
-var server = app.listen(8080, function(){
+var server = app.listen(9099, function(){
 	var host = server.address().address;
 	var port = server.address().port;
 
